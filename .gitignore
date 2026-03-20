@@ -32,6 +32,7 @@ chapter*/target/
 # Optional: ignore generated binaries (if any)
 chapter*/src/bin/*.exe
 chapter*/src/bin/*.out
+chapter*/src/bin/*
 
 # =========================
 # DevContainer / VS Code
