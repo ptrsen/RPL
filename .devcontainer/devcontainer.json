@@ -1,0 +1,26 @@
+{
+  "name": "Workspace for Rust and Rustlings",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "vscode",
+  "updateRemoteUserUID": true,
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "tamasfe.even-better-toml",
+        "vadimcn.vscode-lldb"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "rust-analyzer.check.command": "clippy"
+      }
+    }
+  },
+  "mounts": [
+    "source=cargo-cache,target=/usr/local/cargo/registry,type=volume",
+    "source=rust-target,target=${containerWorkspaceFolder}/target,type=volume"
+  ],
+  "postCreateCommand": "sudo chown -R vscode:vscode /workspaces && cargo install rustlings cargo-watch cargo-binstall && cargo binstall cargo-nextest -y && rustlings --version"
+}

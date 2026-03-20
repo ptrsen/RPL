@@ -1,0 +1,28 @@
+[workspace]
+resolver = "3"
+
+members = [
+    "ch01-getting-started",
+    "ch02-programming-a-guessing-game",
+    "ch03-common-programming-concepts",
+    "ch04-understanding-ownership",
+    "ch05-using-structs-to-structure-related-data",
+    "ch06-enums-and-pattern-matching",
+    "ch07-packages-crates-and-modules",
+    "ch08-common-collections",
+    "ch09-error-handling",
+    "ch10-generic-types-traits-and-lifetimes",
+    "ch11-writing-automated-tests",
+    "ch12-an-io-project-building-a-command-line-program",
+    "ch13-functional-language-features-iterators-and-closures",
+    "ch14-more-about-cargo-and-crates-io",
+    "ch15-smart-pointers",
+    "ch16-fearless-concurrency",
+    "ch17-fundamentals-of-asynchronous-programming-async-await-futures-and-streams",
+    "ch18-object-oriented-programming-features",
+    "ch19-patterns-and-matching",
+    "ch20-advanced-features",
+    "ch21-final-project-building-a-multithreaded-web-server",
+]
+
+exclude = ["rustlings"]
