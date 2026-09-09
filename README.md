@@ -25,6 +25,8 @@ ch01-getting-started/
     ├── ex02_variables.rs
     └── ex03_mutability.rs
 
+
+cargo run -p <path> --bin <name>
 cargo run -p ch01-getting-started --bin ex01_hello
 
 
@@ -34,6 +36,8 @@ cargo chek
 cargo build
 cargo build --release
 cargo run 
+cargo update
+
 
 Internal docs:
 cargo doc --open 
